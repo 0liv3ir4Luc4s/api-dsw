@@ -27,7 +27,9 @@ public class JogoServlet extends HttpServlet {
 		writer.write("<head><title>Sucesso</title>");
 		writer.write("<meta charset=\"UTF-8\">");
 		writer.write("<title>Jogo - API - DSW - Output</title></head>");
+		writer.write("<link href=\"style.css\" rel=\"stylesheet\"/>");
 		writer.write("<body>");
+		writer.write("<h1>Jogo - Output</h1>");
 		writer.write("<ul>");
 		for(int i = 1; i <= request.getParameterMap().values().size(); i++) {
 			n = Integer.parseInt(request.getParameter("n"+i));
