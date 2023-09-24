@@ -2,9 +2,6 @@ package servlets;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.ArrayList;
-import java.util.List;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -14,10 +11,10 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class JogoServlet
  */
-@WebServlet("/JogoServlet")
+@WebServlet(urlPatterns = "/JogoServlet")
 public class JogoServlet extends HttpServlet {
 	
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setCharacterEncoding("UTF-8");
 		
 		Integer n;
