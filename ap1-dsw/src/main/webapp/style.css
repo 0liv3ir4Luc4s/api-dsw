@@ -1,8 +1,28 @@
 @charset "UTF-8";
 h1 {
-	color: #2e8b57;
+     color: #2e8b57;
+     text-align: center;
 }
 label {
-	color: #00f;
-	font-weight: bold;
+     color: #00f;
+     font-weight: bold;
+}
+table {
+     width: 50%;
+     margin: 0 auto;
+     border-collapse: collapse;
+}
+table, th, td {
+     border: 1px solid black;
+}
+th {
+     background-color: #f2f2f2;
+     text-align: center;
+}
+td {
+     padding: 8px;
+     text-align: left;
+}
+.right-align {
+     text-align: right;
 }
